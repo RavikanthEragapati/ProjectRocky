@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class LoginAuthController {
 
-	@RequestMapping(value = "/test")
+	@RequestMapping(value = "/")
 	public String sayHello() {
-		return "Hello";
+		return "Hello LDAP login Success";
 	}
 
 }
