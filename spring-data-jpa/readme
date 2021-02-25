@@ -32,3 +32,7 @@ Task 11: Enable Envers and add @Audited annotation on top of Entities that needs
 Task 12: Customize Envers audit behavior such that it doesn't audit inserts.
 
 Task 13: using spring-jpa AuditingEntityListener to capture @CreatedBy, @CreatedDate, @LastModifiedBy and @LastModifiedDate for inserts and updates 
+			instead of adding the 4 fields in every Entity/Domain class create a super class named AuditingType0 and have these 4 fields in them
+			Any table that need to have these Audit fields extend AuditingType0 in those Domain classes.
+			
+			Enable @EnableJpaAuditing and produce a bean  AuditorAware<String> auditorProvider() ;
