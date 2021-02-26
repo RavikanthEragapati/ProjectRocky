@@ -5,6 +5,6 @@ import org.springframework.jms.annotation.EnableJms;
 
 @Configuration
 @EnableJms
-public class JMSConfiguration {
+public class JmsConfiguration {
 
 }
