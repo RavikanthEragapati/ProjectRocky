@@ -10,7 +10,7 @@ Task 4 : Use Spring-data-JPA with Hibernate as its JPA provider
 
 Task 5 : Generate Entities/Domain classes for the tables using jboss Hibernate-tools
 
-Task 6 : Write a custom template for Hibernate-tools to not generate getters and setters (Pending)
+Task 6 : *Write a custom template for Hibernate-tools to not generate getters and setters (Pending)
 
 Task 7 : Add Lombok dependency and update all the Domain classes to use 
 					
@@ -36,3 +36,19 @@ Task 13: using spring-jpa AuditingEntityListener to capture @CreatedBy, @Created
 			Any table that need to have these Audit fields extend AuditingType0 in those Domain classes.
 			
 			Enable @EnableJpaAuditing and produce a bean  AuditorAware<String> auditorProvider() ;
+			
+Task 14: Install IBM MQ server and configure user, mqm group, create Queue Manager, and Local Queue 
+
+Task 15: JMS
+
+*Task 16: Customize Spring-jpa to not insert @LastModifiedBy and @LastModifiedDate when inserting a record. last_modified_by, last_modified_date to be null for the first record (Pending)
+
+*Task 17: kafka(Pending)
+
+*Task 18: AOP(Pending)
+
+*Task 19: AspectJ(Pending)
+
+*Task 20: LDAP(Pending)
+
+*Task 21: Spring Security Token validation(Pending)
