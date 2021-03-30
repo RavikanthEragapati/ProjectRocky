@@ -18,7 +18,9 @@ import org.hibernate.envers.NotAudited;
 
 import com.eragapati.entities.audit.AuditingType0;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
@@ -29,6 +31,8 @@ import lombok.Setter;
 @Audited
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Customers extends AuditingType0<String> implements java.io.Serializable {
 
 	private static final long serialVersionUID = 1934972439619399369L;
@@ -76,8 +80,7 @@ public class Customers extends AuditingType0<String> implements java.io.Serializ
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "customers")
 	private Set<Orders> orderses = new HashSet<Orders>(0);
 
-	public Customers() {
-	}
+
 
 	public Customers(int customerId, String customerCode, String companyName) {
 		this.customerId = customerId;
@@ -85,22 +88,5 @@ public class Customers extends AuditingType0<String> implements java.io.Serializ
 		this.companyName = companyName;
 	}
 
-	public Customers(int customerId, String customerCode, String companyName, String contactName, String contactTitle,
-			String address, String city, String region, String postalCode, String country, String phone, String fax,
-			Set<Orders> orderses) {
-		this.customerId = customerId;
-		this.customerCode = customerCode;
-		this.companyName = companyName;
-		this.contactName = contactName;
-		this.contactTitle = contactTitle;
-		this.address = address;
-		this.city = city;
-		this.region = region;
-		this.postalCode = postalCode;
-		this.country = country;
-		this.phone = phone;
-		this.fax = fax;
-		this.orderses = orderses;
-	}
 
 }

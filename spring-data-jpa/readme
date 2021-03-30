@@ -39,7 +39,11 @@ Task 13: using spring-jpa AuditingEntityListener to capture @CreatedBy, @Created
 			
 Task 14: Install IBM MQ server and configure user, mqm group, create Queue Manager, and Local Queue 
 
-Task 15: JMS
+Task 15: Enable JMS and write 2 API's to produce and consume a message
+
+		 1. JmsConfiguration.java
+		 2. MessagingController.java
+		 
 
 *Task 16: Customize Spring-jpa to not insert @LastModifiedBy and @LastModifiedDate when inserting a record. last_modified_by, last_modified_date to be null for the first record (Pending)
 

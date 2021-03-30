@@ -19,7 +19,9 @@ import org.hibernate.envers.NotAudited;
 
 import com.eragapati.entities.audit.AuditingType0;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
@@ -30,6 +32,8 @@ import lombok.Setter;
 @Audited
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Categories extends AuditingType0<String> implements java.io.Serializable {
 
 	private static final long serialVersionUID = 1934287823209891670L;
@@ -53,20 +57,10 @@ public class Categories extends AuditingType0<String> implements java.io.Seriali
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "categories")
 	private Set<Products> productses = new HashSet<Products>(0);
 
-	public Categories() {
-	}
-
 	public Categories(int categoryId, String categoryName) {
 		this.categoryId = categoryId;
 		this.categoryName = categoryName;
 	}
 
-	public Categories(int categoryId, String categoryName, String description, String picture,
-			Set<Products> productses) {
-		this.categoryId = categoryId;
-		this.categoryName = categoryName;
-		this.description = description;
-		this.picture = picture;
-		this.productses = productses;
-	}
+
 }

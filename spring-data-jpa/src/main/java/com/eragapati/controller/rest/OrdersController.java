@@ -11,20 +11,15 @@ public class OrdersController {
 
 	@Autowired
 	IOrdersService orderservice;
-
 	@RequestMapping("/insert")
 	public String insert() {
-
 		orderservice.getOrder();
-
 		return "Hi";
 	}
 	
 	@RequestMapping("/update")
 	public String update() {
-
 		orderservice.getOrderUpdate();
-
 		return "Hi";
 	}
 
