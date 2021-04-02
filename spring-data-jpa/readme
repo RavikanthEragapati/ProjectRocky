@@ -19,6 +19,8 @@ Task 7 : Add Lombok dependency and update all the Domain classes to use
 					
 					@Getter
 					@Setter
+					@AllArgsConstructor
+					@NoArgsConstructor
 					
 Task 8 : Install Lombok on Eclipse IDE by executing the jar that is added as a maven dependency with below cmd
 				cmd : java -jar lombok-*.*.*.jar
@@ -55,4 +57,14 @@ Task 15: Enable JMS and write 2 API's to produce and consume a message
 
 *Task 20: LDAP(Pending)
 
-*Task 21: Spring Security Token validation(Pending)
+*Task 21: Spring Security and Token validation(Pending)
+
+Task 22: Use Circuit Breaker pattern (Netflix Hystrix) to provide fault tolerance
+
+Task 23: Swagger documentation 
+
+Task 24: API Cache
+
+Task 25: @Cachable
+
+Task 26: HATEOS
